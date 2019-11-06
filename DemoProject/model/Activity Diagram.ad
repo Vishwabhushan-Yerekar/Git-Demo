@@ -19,6 +19,11 @@
           </clause>
         </inputArgs>
       </actionInvocations>
+      <actionInvocations xmi:type="ad:ActionInvocation" xmi:id="_CtCQUABsEeqHCKyHg8aATg" methodRef="qmld8f711a5625745aead58be0d21a4aa4c_Display_Screen">
+        <inputArgs xmi:type="ad:Expression" xmi:id="_CtCQUQBsEeqHCKyHg8aATg">
+          <clause xmi:type="ad:FunctionCallClause" xmi:id="_CtCQUgBsEeqHCKyHg8aATg" methodRef="qmld8f711a5625745aead58be0d21a4aa4c_Create_Default_Initialized"/>
+        </inputArgs>
+      </actionInvocations>
     </nodes>
   </ad:ActivityDiagram>
   <notation:Diagram xmi:id="_Bay3QABqEeqHCKyHg8aATg" type="ConformiqActivityChart" element="_BaxpIABqEeqHCKyHg8aATg" name="Activity%20Diagram.ad" measurementUnit="Pixel">
@@ -37,6 +42,13 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_gzeU4gBrEeqHCKyHg8aATg" fontName="Segoe UI"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_gzeU4wBrEeqHCKyHg8aATg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gzeU5ABrEeqHCKyHg8aATg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CtGhwABsEeqHCKyHg8aATg" type="3001" element="_CtCQUABsEeqHCKyHg8aATg">
+          <children xmi:type="notation:DecorationNode" xmi:id="_CtHI0ABsEeqHCKyHg8aATg" type="5015"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_CtGhwQBsEeqHCKyHg8aATg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CtGhwgBsEeqHCKyHg8aATg" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_CtGhwwBsEeqHCKyHg8aATg"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CtGhxABsEeqHCKyHg8aATg"/>
         </children>
         <styles xmi:type="notation:SortingStyle" xmi:id="_fxdeRgBrEeqHCKyHg8aATg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_fxdeRwBrEeqHCKyHg8aATg"/>
