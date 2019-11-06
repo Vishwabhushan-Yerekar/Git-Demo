@@ -24,6 +24,14 @@
           <clause xmi:type="ad:FunctionCallClause" xmi:id="_CtCQUgBsEeqHCKyHg8aATg" methodRef="qmld8f711a5625745aead58be0d21a4aa4c_Create_Default_Initialized"/>
         </inputArgs>
       </actionInvocations>
+      <actionInvocations xmi:type="ad:ActionInvocation" xmi:id="_XA2J8AB7Eeq-EpcqDSfMOQ" methodRef="qmlcb81db04a09943d48e36b50d653a7a5e_Custom_Verification_qmld4d58d4398ec4b8a9568c2c348fe7564">
+        <inputArgs xmi:type="ad:Expression" xmi:id="_XA2J8QB7Eeq-EpcqDSfMOQ">
+          <clause xmi:type="ad:StringLiteralClause" xmi:id="_XA2J8gB7Eeq-EpcqDSfMOQ" value="Message"/>
+        </inputArgs>
+        <inputArgs xmi:type="ad:Expression" xmi:id="_XA2J8wB7Eeq-EpcqDSfMOQ">
+          <clause xmi:type="ad:FunctionCallClause" xmi:id="_XA2J9AB7Eeq-EpcqDSfMOQ" methodRef="qmlcb81db04a09943d48e36b50d653a7a5e_Dont_Care_Value"/>
+        </inputArgs>
+      </actionInvocations>
     </nodes>
   </ad:ActivityDiagram>
   <notation:Diagram xmi:id="_Bay3QABqEeqHCKyHg8aATg" type="ConformiqActivityChart" element="_BaxpIABqEeqHCKyHg8aATg" name="Activity%20Diagram.ad" measurementUnit="Pixel">
@@ -49,6 +57,13 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_CtGhwgBsEeqHCKyHg8aATg" fontName="Segoe UI"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_CtGhwwBsEeqHCKyHg8aATg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CtGhxABsEeqHCKyHg8aATg"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_XC5_cAB7Eeq-EpcqDSfMOQ" type="3001" element="_XA2J8AB7Eeq-EpcqDSfMOQ">
+          <children xmi:type="notation:DecorationNode" xmi:id="_XC6mgAB7Eeq-EpcqDSfMOQ" type="5015"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_XC5_cQB7Eeq-EpcqDSfMOQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_XC5_cgB7Eeq-EpcqDSfMOQ" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_XC5_cwB7Eeq-EpcqDSfMOQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XC5_dAB7Eeq-EpcqDSfMOQ"/>
         </children>
         <styles xmi:type="notation:SortingStyle" xmi:id="_fxdeRgBrEeqHCKyHg8aATg"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_fxdeRwBrEeqHCKyHg8aATg"/>
