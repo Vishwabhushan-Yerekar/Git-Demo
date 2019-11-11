@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.conformiq:ConformiqProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.conformiq="http://www.conformiq.com/models/3/project" propertiesVersion="1001">
+  <designConfigurations name="DC" id="21fd2f881680bc12c0ee45f9b43191e1"/>
+  <projectProperties key="CreatorDataDistribution" value="false"/>
+  <projectProperties key="IntelligentTestCaseNaming" value="true"/>
+  <projectProperties key="LookAheadDepth" value="0"/>
+  <projectProperties key="MainActivityDiagram" value="model/Activity Diagram.ad"/>
+  <projectProperties key="OnlyFinalizedRuns" value="false"/>
+  <projectProperties key="TestCaseIndexOffset" value="0"/>
+  <projectProperties key="TestCaseNamePrefix" value="Test Case "/>
+  <projectProperties key="TestCaseOrdering" value="CHRONOLOGICAL_SHORTEST_TEST_FIRST"/>
+  <projectProperties key="TestGenTimeLimit" value="10"/>
+  <projectProperties key="TestGenerationStopCondition" value="REPEATABLE_TEST_SET"/>
+  <projectProperties key="TestSelection" value="FEWEST_TESTS"/>
+</com.conformiq:ConformiqProject>
