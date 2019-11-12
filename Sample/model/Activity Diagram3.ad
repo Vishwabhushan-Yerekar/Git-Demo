@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ad="http://www.conformiq.com/emf/15/ActivityDiagram" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <ad:ActivityDiagram xmi:id="_-fn74AUlEeqNQY8_ho57Bw" type="qmld678c241e49246ef910d5a864afe9a80">
+    <controlFlows xmi:type="ad:NormalControlFlow" xmi:id="__k2emAUlEeqNQY8_ho57Bw" to="__ktUoAUlEeqNQY8_ho57Bw" from="__HIn0AUlEeqNQY8_ho57Bw"/>
+    <nodes xmi:type="ad:InitialNode" xmi:id="__HIn0AUlEeqNQY8_ho57Bw" name="Initial Node" controlFlowsOut="__k2emAUlEeqNQY8_ho57Bw"/>
+    <nodes xmi:type="ad:ActivityNode" xmi:id="__ktUoAUlEeqNQY8_ho57Bw" name="Activity Node 1" controlFlowsIn="__k2emAUlEeqNQY8_ho57Bw">
+      <actionInvocations xmi:type="ad:ActionInvocation" xmi:id="_ARVKEAUmEeqNQY8_ho57Bw" methodRef="qml506f1236c03341b39a7b76f5a44b3623_Display_Screen">
+        <inputArgs xmi:type="ad:Expression" xmi:id="_ARVKEQUmEeqNQY8_ho57Bw">
+          <clause xmi:type="ad:FunctionCallClause" xmi:id="_ARVKEgUmEeqNQY8_ho57Bw" methodRef="qml506f1236c03341b39a7b76f5a44b3623_Create_Default_Initialized"/>
+        </inputArgs>
+      </actionInvocations>
+    </nodes>
+  </ad:ActivityDiagram>
+  <notation:Diagram xmi:id="_-fn74QUlEeqNQY8_ho57Bw" type="ConformiqActivityChart" element="_-fn74AUlEeqNQY8_ho57Bw" name="Activity Diagram3.ad" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="__HIn0QUlEeqNQY8_ho57Bw" type="2004" element="__HIn0AUlEeqNQY8_ho57Bw">
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="__HIn0gUlEeqNQY8_ho57Bw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__HIn0wUlEeqNQY8_ho57Bw" fontName="Segoe UI"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="__HIn1AUlEeqNQY8_ho57Bw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__HIn1QUlEeqNQY8_ho57Bw" x="263" y="127"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="__k2ekAUlEeqNQY8_ho57Bw" type="2006" element="__ktUoAUlEeqNQY8_ho57Bw">
+      <children xmi:type="notation:DecorationNode" xmi:id="__k2elAUlEeqNQY8_ho57Bw" type="5006"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="__k2elQUlEeqNQY8_ho57Bw" type="7001">
+        <children xmi:type="notation:Node" xmi:id="_ARVKEwUmEeqNQY8_ho57Bw" type="3001" element="_ARVKEAUmEeqNQY8_ho57Bw">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ARVKGAUmEeqNQY8_ho57Bw" type="5015"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_ARVKFAUmEeqNQY8_ho57Bw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ARVKFQUmEeqNQY8_ho57Bw" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_ARVKFgUmEeqNQY8_ho57Bw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ARVKFwUmEeqNQY8_ho57Bw"/>
+        </children>
+        <styles xmi:type="notation:SortingStyle" xmi:id="__k2elgUlEeqNQY8_ho57Bw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="__k2elwUlEeqNQY8_ho57Bw"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="__k2ekQUlEeqNQY8_ho57Bw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__k2ekgUlEeqNQY8_ho57Bw" fontName="Segoe UI"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__k2ekwUlEeqNQY8_ho57Bw" x="283" y="209"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-fn74gUlEeqNQY8_ho57Bw"/>
+    <edges xmi:type="notation:Edge" xmi:id="__k2emQUlEeqNQY8_ho57Bw" type="4001" element="__k2emAUlEeqNQY8_ho57Bw" source="__HIn0QUlEeqNQY8_ho57Bw" target="__k2ekAUlEeqNQY8_ho57Bw">
+      <styles xmi:type="notation:RoutingStyle" xmi:id="__k2emgUlEeqNQY8_ho57Bw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="__k2emwUlEeqNQY8_ho57Bw" fontName="Segoe UI"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__k2enAUlEeqNQY8_ho57Bw" points="[-27, -15, 263, 146]$[-290, -161, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__lAPkAUlEeqNQY8_ho57Bw" id="(0.675,0.85)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>
