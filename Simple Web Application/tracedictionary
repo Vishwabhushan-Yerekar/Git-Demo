@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.conformiq.tracedictionary:TraceDictionaryRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.conformiq.creator.structure.dsl="http://www.conformiq.com/emf/14/StructureDiagram" xmlns:com.conformiq.tracedictionary="http://www.conformiq.com/emf/0/TraceDictionary">
+  <slTypeTable>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:ExternalInterface" id="qml17e002178ac44f14a293b37347fcb6ce" name="config"/>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:Message" id="qmlb822d3fcfd9f41ef87990752d5437f11" name="Configuration">
+      <interfaces ref="//@slTypeTable/@elems.0"/>
+      <fields xsi:type="com.conformiq.creator.structure.dsl:PrimitiveField" id="qml045481c3981042e7b1643a44c7e99f57" name="baseUrl" type="String"/>
+    </elems>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:DataTable" id="qmlbed44af6da6f475daeb83176639af5b5" name="Items">
+      <cells xsi:type="com.conformiq.creator.structure.dsl:PrimitiveCell" id="qmlcb13787b045a4f888ff43daae3612b3b" name="sku" type="String"/>
+      <cells xsi:type="com.conformiq.creator.structure.dsl:PrimitiveCell" id="qml7d5e4d30fa844605abd3c4b77f5727bb" name="qty"/>
+    </elems>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:Screen" id="qml6e8134b8c9934d56a4de3a6509ccf196" name="ESD Main">
+      <elems xsi:type="com.conformiq.creator.structure.dsl:Form" id="qml9728b5aef5024b6da9cfddae7b3719e5" name="Item">
+        <dataMapping id="qmlcb8162df15a44e37bafeee7d04ab4e2b" name="" source="//@slTypeTable/@elems.3/@elems.0" target="//@slTypeTable/@elems.2"/>
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:TextBox" id="qml7d0387ac657b42ef90f76fcfdd630220" name="sku" type="String" defaultStatus="enabled"/>
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:TextBox" id="qml9ecbfd96726844b7b8a655fdc17c913d" name="qty" defaultStatus="enabled"/>
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:Button" id="qml66eda3c643a040948766296a7fe0d1ea" name="Add Item" defaultStatus="enabled"/>
+      </elems>
+      <elems xsi:type="com.conformiq.creator.structure.dsl:Button" id="qml602c51f2cc314627900b245c52678501" name="Checkout"/>
+      <elems xsi:type="com.conformiq.creator.structure.dsl:UITable" id="qmlcd2fef20e2134d92aa047dc60a0ed18e" name="Shopping cart" dataTable="//@slTypeTable/@elems.2">
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:Button" id="qml49453deee3954c19a0fccb54c65d5735" name="Remove item"/>
+      </elems>
+    </elems>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:Screen" id="qml2807bd4869f84a98a6096d7517b799dc" name="ESD Checkout">
+      <elems xsi:type="com.conformiq.creator.structure.dsl:UITable" id="qml1ddab3f2fbb24efd8fc462af13fe0e9c" name="Shopping cart" dataTable="//@slTypeTable/@elems.2"/>
+    </elems>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:Popup" id="qmlf70081db82ff4c97a0bedfeddb222955" name="Error">
+      <widgets xsi:type="com.conformiq.creator.structure.dsl:Button" id="qml0ef2b7dc795c449e9723aaf1743376a7" name="OK" defaultStatus="enabled"/>
+    </elems>
+    <elems xsi:type="com.conformiq.creator.structure.dsl:Screen" id="qml25d1c91fed7a4d0194af5e0255e4fac2" name="Login">
+      <elems xsi:type="com.conformiq.creator.structure.dsl:MenuBar" id="qml27c90ac971f7474eb82f046fbe5029b3" name="MenuBar">
+        <menus id="qmlb522859aa19e48e8b7b3fd5a88c10f06" name="File">
+          <choices xsi:type="com.conformiq.creator.structure.dsl:ClickChoice" id="qml56613614fd464ca692f2285852c57fac" name="Save"/>
+        </menus>
+        <menus id="qmlea22270124a749cca51b2d24bcd68df4" name="Help">
+          <choices xsi:type="com.conformiq.creator.structure.dsl:ClickChoice" id="qml0c6e8087a81b46c9bb22b08b6a505440" name="Help"/>
+        </menus>
+      </elems>
+      <elems xsi:type="com.conformiq.creator.structure.dsl:Form" id="qml049bdeb3147d4ef5949c16c65f31bc29" name="UserInfo">
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:TextBox" id="qml770130b5665e489f998cc15a23f89fb3" name="userName" type="String"/>
+        <widgets xsi:type="com.conformiq.creator.structure.dsl:TextBox" id="qmlfea499de4b1f4dd9b37c090059b8ebd5" name="password" type="String"/>
+      </elems>
+      <elems xsi:type="com.conformiq.creator.structure.dsl:Button" id="qml679f615fcadf44d4b85e425260afaa73" name="OK"/>
+    </elems>
+  </slTypeTable>
+  <stepClassForRecordId key="Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce">
+    <value xsi:type="com.conformiq.tracedictionary:MessageStepClass" externalInterface="//@slTypeTable/@elems.0" message="//@slTypeTable/@elems.1"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Outp_action qml6e8134b8c9934d56a4de3a6509ccf196_Display_Screen">
+    <value xsi:type="com.conformiq.tracedictionary:DisplayScreenStepClass" screen="//@slTypeTable/@elems.3"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Outp_action qml2807bd4869f84a98a6096d7517b799dc_Display_Screen">
+    <value xsi:type="com.conformiq.tracedictionary:DisplayScreenStepClass" screen="//@slTypeTable/@elems.4"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196">
+    <value xsi:type="com.conformiq.tracedictionary:ClickButtonOrHyperlinkStepClass" clicked="//@slTypeTable/@elems.3/@elems.1"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml66eda3c643a040948766296a7fe0d1ea_Click_Action_qml9728b5aef5024b6da9cfddae7b3719e5">
+    <value xsi:type="com.conformiq.tracedictionary:ClickButtonOrHyperlinkStepClass" clicked="//@slTypeTable/@elems.3/@elems.0/@widgets.2"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action">
+    <value xsi:type="com.conformiq.tracedictionary:FillFormDirectStepClass" form="//@slTypeTable/@elems.3/@elems.0"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup">
+    <value xsi:type="com.conformiq.tracedictionary:DisplayPopupStepClass" popup="//@slTypeTable/@elems.5"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e">
+    <value xsi:type="com.conformiq.tracedictionary:ClickButtonOrHyperlinkStepClass" clicked="//@slTypeTable/@elems.3/@elems.2/@widgets.0"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml679f615fcadf44d4b85e425260afaa73_Click_Action_qml25d1c91fed7a4d0194af5e0255e4fac2">
+    <value xsi:type="com.conformiq.tracedictionary:ClickButtonOrHyperlinkStepClass" clicked="//@slTypeTable/@elems.6/@elems.2"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Inp_action qml049bdeb3147d4ef5949c16c65f31bc29_Fill_Form_Action">
+    <value xsi:type="com.conformiq.tracedictionary:FillFormDirectStepClass" form="//@slTypeTable/@elems.6/@elems.1"/>
+  </stepClassForRecordId>
+  <stepClassForRecordId key="Outp_action qml25d1c91fed7a4d0194af5e0255e4fac2_Display_Screen">
+    <value xsi:type="com.conformiq.tracedictionary:DisplayScreenStepClass" screen="//@slTypeTable/@elems.6"/>
+  </stepClassForRecordId>
+</com.conformiq.tracedictionary:TraceDictionaryRoot>

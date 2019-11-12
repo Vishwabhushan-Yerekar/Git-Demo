@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.conformiq:ConformiqProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.conformiq="http://www.conformiq.com/models/3/project" propertiesVersion="1001">
+  <designConfigurations name="DC" id="682b8080901478c38d6144742e476463">
+    <scripterConfigurations jarPath="Conformiq_Designer/SeleniumJavaScripter.jar" pluginName="SeleniumJavaScripter">
+      <scripterPropertyCategories name="Main">
+        <categoryProperties key="Output folder" value="Selenium Java"/>
+        <categoryProperties key="Root package" value="src"/>
+        <categoryProperties key="Test suite name" value="TestSuite"/>
+        <categoryProperties key="Browser Type" value="Mozilla"/>
+        <categoryProperties key="Append timestamp to the output folder" value="false"/>
+        <categoryProperties key="GUI action automation mapping" value="GUI action automation mapping.xls"/>
+        <categoryProperties key="Natural language automation mapping" value="Natural language automation mapping.xls"/>
+        <categoryProperties key="Disable export of widget status verification" value="true"/>
+        <categoryProperties key="Ignore verifications other than widget status" value="true"/>
+        <categoryProperties key="Disable export of don't care data widget and field verifications" value="true"/>
+        <categoryProperties key="Disable creating parameter for don't care input data" value="true"/>
+        <categoryProperties key="Add new custom actions as library action mapping" value="false"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Impact Analysis">
+        <categoryProperties key="Sprint" value="Sprint1"/>
+      </scripterPropertyCategories>
+    </scripterConfigurations>
+    <scripterConfigurations jarPath="Conformiq_Designer/ExcelScripter.jar" pluginName="ExcelScripter" enabled="true" sequenceNumber="1">
+      <scripterPropertyCategories name="General">
+        <categoryProperties key="Output file" value="ExcelTestSuite.xls"/>
+        <categoryProperties key="Auto-resize Excel output column width" value="false"/>
+        <categoryProperties key="Template file" value="ExcelTemplate.xls"/>
+        <categoryProperties key="Generate QC compatible default template file" value="true"/>
+        <categoryProperties key="Mapping file"/>
+        <categoryProperties key="Configuration message type"/>
+        <categoryProperties key="Verdict values" value="Open, Pass, Fail, Not_Executable"/>
+        <categoryProperties key="Create separate traceability matrix for body coverage" value="false"/>
+        <categoryProperties key="Merge steps with no verification point(s) with following step(s)" value="true"/>
+        <categoryProperties key="Merge steps with no action(s) with preceding step(s)" value="false"/>
+        <categoryProperties key="Omit information about where a requirement was included" value="true"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Mapping">
+        <categoryProperties key="Custom mapping source"/>
+      </scripterPropertyCategories>
+      <scripterPropertyCategories name="Textual messages">
+        <categoryProperties key="No action" value="No action"/>
+        <categoryProperties key="No errors can be observed at the SUT" value="No errors can be observed at the SUT"/>
+        <categoryProperties key="External circumstance prefix" value="External circumstance: "/>
+      </scripterPropertyCategories>
+    </scripterConfigurations>
+  </designConfigurations>
+  <projectProperties key="CreatorDataDistribution" value="false"/>
+  <projectProperties key="IntelligentTestCaseNaming" value="true"/>
+  <projectProperties key="LookAheadDepth" value="0"/>
+  <projectProperties key="MainActivityDiagram" value="model/Simple Web Application.ad"/>
+  <projectProperties key="OnlyFinalizedRuns" value="false"/>
+  <projectProperties key="TestCaseIndexOffset" value="0"/>
+  <projectProperties key="TestCaseNamePrefix" value="Test Case "/>
+  <projectProperties key="TestCaseOrdering" value="CHRONOLOGICAL_SHORTEST_TEST_FIRST"/>
+  <projectProperties key="TestGenTimeLimit" value="10"/>
+  <projectProperties key="TestGenerationStopCondition" value="REPEATABLE_TEST_SET"/>
+  <projectProperties key="TestSelection" value="FEWEST_TESTS"/>
+</com.conformiq:ConformiqProject>

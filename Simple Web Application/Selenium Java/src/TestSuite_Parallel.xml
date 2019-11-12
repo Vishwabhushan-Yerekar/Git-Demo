@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel TestSuite" parallel="methods" thread-count="2">
+ <test name="Parallel TestCase" >
+    <classes>
+      <class name="testsuite.Sku_=__CQ_0002_"/>
+      <class name="testsuite.Sku_=__CQ_0003_"/>
+      <class name="testsuite.Node_Activity__Invalid_Login_"/>
+      <class name="testsuite.Node_Activity__Invalid_Entry_"/>
+      <class name="testsuite.Node_Activity__Check_Out_"/>
+      <class name="testsuite.Node_Activity__Remove_Item_"/>
+    </classes>
+ </test>
+</suite>

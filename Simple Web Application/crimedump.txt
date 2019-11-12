@@ -1,0 +1,1752 @@
+Loc_Initial_#1:
+  let dummy_#1 =
+    writeglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1 =
+      makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+  in
+    makesum adhocsum(adhocrecord(Loc_node _F7EtAJPDEeO_KayZfGtJow Initial Node_#1))
+      makerecord adhocrecord(Loc_node _F7EtAJPDEeO_KayZfGtJow Initial Node_#1)
+
+Loc_node _F7EtAJPDEeO_KayZfGtJow Initial Node_#1:
+  let dummy_#55 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._F7EtAJPDEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _LJU6kJPDEeO_KayZfGtJow Initial Node -> Activity Node 'Intialize'_#1))
+      makerecord adhocrecord(Loc_flow _LJU6kJPDEeO_KayZfGtJow Initial Node -> Activity Node 'Intialize'_#1)
+
+Loc_flow _LJU6kJPDEeO_KayZfGtJow Initial Node -> Activity Node 'Intialize'_#1:
+  let successor_#1 =
+    switch
+      bool basis =
+        equal
+          equal
+            true
+            false
+          false
+      case adhocrecord(True_#1) cond_#32 = basis
+        switch
+          adhocsum(persistentrecord(Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce)) basis =
+            receive adhocsum(persistentrecord(Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce))
+          case persistentrecord(Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce) switched_#11 = basis
+            accessfield successor
+              switch
+                adhocsum(adhocrecord(Some_#2), adhocrecord(None_#1)) basis =
+                  let found_#4 =
+                    switch
+                      bool basis =
+                        switch
+                          bool basis =
+                            true
+                          case adhocrecord(True_#1) cond_#34 = basis
+                            blockdontcare
+                              let instanceToMatch_#9 =
+                                accessfield payload
+                                  readlocal switched_#11
+                              and let matchField_baseUrl_alt_1_#2 =
+                                equal
+                                  "esd.conformiq.com"
+                                  accessfield qml045481c3981042e7b1643a44c7e99f57
+                                    readlocal instanceToMatch_#9
+                              in
+                                equal
+                                  equal
+                                    readlocal matchField_baseUrl_alt_1_#2
+                                    false
+                                  false
+                          case adhocrecord(False_#1) cond_#34 = basis
+                            false
+                      case adhocrecord(True_#1) cond_#33 = basis
+                        switch
+                          adhocsum(adhocrecord(Some_#2), adhocrecord(None_#1)) basis =
+                            makesum adhocsum(adhocrecord(Some_#2), adhocrecord(None_#1))
+                              makerecord adhocrecord(None_#1)
+                          case adhocrecord(Some_#2) switched_#13 = basis
+                            halt DEFECT "Non deterministic selection of next possible event"
+                          case adhocrecord(None_#1) switched_#13 = basis
+                            makesum adhocsum(adhocrecord(Some_#2), adhocrecord(None_#1))
+                              makerecord adhocrecord(Some_#2)
+                                adhocsum(adhocrecord(Loc_node _HMjjAJPDEeO_KayZfGtJow Activity Node 'Intialize'_#1)) successor = 
+                                  makesum adhocsum(adhocrecord(Loc_node _HMjjAJPDEeO_KayZfGtJow Activity Node 'Intialize'_#1))
+                                    makerecord adhocrecord(Loc_node _HMjjAJPDEeO_KayZfGtJow Activity Node 'Intialize'_#1)
+                                      persistentrecord(Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce) received = 
+                                        readlocal switched_#11
+                      case adhocrecord(False_#1) cond_#33 = basis
+                        makesum adhocsum(adhocrecord(Some_#2), adhocrecord(None_#1))
+                          makerecord adhocrecord(None_#1)
+                  in
+                    readlocal found_#4
+                case adhocrecord(Some_#2) switched_#12 = basis
+                  readlocal switched_#12
+                case adhocrecord(None_#1) switched_#12 = basis
+                  halt BLOCKED "Action guard mismatch"
+      case adhocrecord(False_#1) cond_#32 = basis
+        halt DEFECT "Cannot make progress in the model because all the preconditions are false"
+  and let dummy_#67 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._LJU6kJPDEeO_KayZfGtJow
+  in
+    readlocal successor_#1
+
+Loc_node _HMjjAJPDEeO_KayZfGtJow Activity Node 'Intialize'_#1:
+  let dummy_#4 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._HMjjAJPDEeO_KayZfGtJow
+  in
+    let summable_#2 =
+      let received_#2 =
+        accessfield received
+          readlocal Loc_node _HMjjAJPDEeO_KayZfGtJow Activity Node 'Intialize'_locationData_#1
+      in
+        makerecord adhocrecord(Loc_invocation _NvqqsJPDEeO_KayZfGtJow Action #1 in Activity 'Intialize'_#1)
+          persistentrecord(Inp_action qmlb822d3fcfd9f41ef87990752d5437f11_Receive_From_qml17e002178ac44f14a293b37347fcb6ce) received = 
+            readlocal received_#2
+    in
+      makesum adhocsum(adhocrecord(Loc_invocation _NvqqsJPDEeO_KayZfGtJow Action #1 in Activity 'Intialize'_#1))
+        readlocal summable_#2
+
+Loc_invocation _NvqqsJPDEeO_KayZfGtJow Action #1 in Activity 'Intialize'_#1:
+  let received_#1 =
+    blockdontcare
+      accessfield received
+        readlocal Loc_invocation _NvqqsJPDEeO_KayZfGtJow Action #1 in Activity 'Intialize'_locationData_#1
+  and let dummy_#2 =
+    let result_#1 =
+      let summable_#1 =
+        let input_#1 =
+          blockdontcare
+            accessfield payload
+              readlocal received_#1
+        and let dummy_#3 =
+          let instanceToMatch_#1 =
+            readlocal input_#1
+          and let matchField_baseUrl_alt_1_#1 =
+            equal
+              "esd.conformiq.com"
+              accessfield qml045481c3981042e7b1643a44c7e99f57
+                readlocal instanceToMatch_#1
+          in
+            covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _HMjjAJPDEeO_KayZfGtJow.invocation _NvqqsJPDEeO_KayZfGtJow.value _YJeXIJPDEeO_KayZfGtJow
+        in
+          readlocal input_#1
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qmlb822d3fcfd9f41ef87990752d5437f11))
+          readlocal summable_#1
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._HMjjAJPDEeO_KayZfGtJow._NvqqsJPDEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _kUgl8MOtEeOkbLW0qDGG4A Activity Node 'Intialize' -> Activity Node 'Login'_#1))
+      makerecord adhocrecord(Loc_flow _kUgl8MOtEeOkbLW0qDGG4A Activity Node 'Intialize' -> Activity Node 'Login'_#1)
+
+Loc_flow _kUgl8MOtEeOkbLW0qDGG4A Activity Node 'Intialize' -> Activity Node 'Login'_#1:
+  let dummy_#77 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._kUgl8MOtEeOkbLW0qDGG4A
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A Activity Node 'Login'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A Activity Node 'Login'_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A Activity Node 'Login'_#1:
+  let dummy_#54 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._MqAdcJOzEeO_KayZfGtJow Initial Node_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._MqAdcJOzEeO_KayZfGtJow Initial Node_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A._MqAdcJOzEeO_KayZfGtJow Initial Node_#1:
+  let dummy_#48 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._MqAdcJOzEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._14recLZTEeOjUOM1TU9Atg Initial Node -> Activity Node 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._14recLZTEeOjUOM1TU9Atg Initial Node -> Activity Node 'Request user to login'_#1)
+
+Loc_flow _jCinwMOtEeOkbLW0qDGG4A._14recLZTEeOjUOM1TU9Atg Initial Node -> Activity Node 'Request user to login'_#1:
+  let dummy_#50 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._14recLZTEeOjUOM1TU9Atg
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow Activity Node 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow Activity Node 'Request user to login'_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow Activity Node 'Request user to login'_#1:
+  let dummy_#39 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._Ew9mkJNQEeO_KayZfGtJow Action #1 in Activity 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._Ew9mkJNQEeO_KayZfGtJow Action #1 in Activity 'Request user to login'_#1)
+
+Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._Ew9mkJNQEeO_KayZfGtJow Action #1 in Activity 'Request user to login'_#1:
+  let dummy_#38 =
+    let result_#16 =
+      let summable_#18 =
+        emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qml25d1c91fed7a4d0194af5e0255e4fac2_Display_Screen))
+          record CrimePersistentRecord(Outp_action qml25d1c91fed7a4d0194af5e0255e4fac2_Display_Screen):
+            field payload =
+              record CrimePersistentRecord(Q_qml25d1c91fed7a4d0194af5e0255e4fac2):
+                field qml049bdeb3147d4ef5949c16c65f31bc29_Form_Data_Instance =
+                  record CrimePersistentRecord(Q_qml049bdeb3147d4ef5949c16c65f31bc29):
+                    field qml770130b5665e489f998cc15a23f89fb3 =
+                      TraceStringValue(TraceDontCare)
+                    field qmlfea499de4b1f4dd9b37c090059b8ebd5 =
+                      TraceStringValue(TraceDontCare)
+                field qml049bdeb3147d4ef5949c16c65f31bc29_Form_Widget_Status_Data_Instance =
+                  record CrimePersistentRecord(Q_qml049bdeb3147d4ef5949c16c65f31bc29_Form_Widget_Status_Data):
+                    field qml770130b5665e489f998cc15a23f89fb3 =
+                      TraceEnumValue(TraceType.Enum(Q_WidgetStatus), TraceDontCare)
+                    field qmlfea499de4b1f4dd9b37c090059b8ebd5 =
+                      TraceEnumValue(TraceType.Enum(Q_WidgetStatus), TraceDontCare)
+                field qml679f615fcadf44d4b85e425260afaa73 =
+                  TraceEnumValue(TraceType.Enum(Q_WidgetStatus), TraceDontCare)
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#18
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow._Ew9mkJNQEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._GV0EgJNQEeO_KayZfGtJow Action #2 in Activity 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._GV0EgJNQEeO_KayZfGtJow Action #2 in Activity 'Request user to login'_#1)
+
+Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._GV0EgJNQEeO_KayZfGtJow Action #2 in Activity 'Request user to login'_#1:
+  let dummy_#35 =
+    let result_#15 =
+      let received_#11 =
+        blockdontcare
+          switch
+            adhocsum(persistentrecord(Inp_action qml049bdeb3147d4ef5949c16c65f31bc29_Fill_Form_Action)) basis =
+              receive adhocsum(persistentrecord(Inp_action qml049bdeb3147d4ef5949c16c65f31bc29_Fill_Form_Action))
+            case persistentrecord(Inp_action qml049bdeb3147d4ef5949c16c65f31bc29_Fill_Form_Action) switched_#3 = basis
+              readlocal switched_#3
+      and let dummy_#37 =
+        switch
+          bool basis =
+            blockdontcare
+              true
+          case adhocrecord(True_#1) cond_#13 = basis
+            makerecord adhocrecord(Void_#1)
+          case adhocrecord(False_#1) cond_#13 = basis
+            halt BLOCKED "Action guard mismatch"
+      in
+        let summable_#17 =
+          let input_#4 =
+            blockdontcare
+              accessfield payload
+                readlocal received_#11
+          in
+            readlocal input_#4
+        in
+          makesum adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml049bdeb3147d4ef5949c16c65f31bc29))
+            readlocal summable_#17
+    and let dummy_#36 =
+      writeglobal qmlea94aa09365c4d32b6e8fa1b60f17a15_#1 =
+        readlocal result_#15
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow._GV0EgJNQEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._eHNP8JO6EeO_KayZfGtJow Action #3 in Activity 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._eHNP8JO6EeO_KayZfGtJow Action #3 in Activity 'Request user to login'_#1)
+
+Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._eHNP8JO6EeO_KayZfGtJow Action #3 in Activity 'Request user to login'_#1:
+  let dummy_#33 =
+    let result_#14 =
+      let received_#10 =
+        blockdontcare
+          switch
+            adhocsum(persistentrecord(Inp_action qml679f615fcadf44d4b85e425260afaa73_Click_Action_qml25d1c91fed7a4d0194af5e0255e4fac2)) basis =
+              receive adhocsum(persistentrecord(Inp_action qml679f615fcadf44d4b85e425260afaa73_Click_Action_qml25d1c91fed7a4d0194af5e0255e4fac2))
+            case persistentrecord(Inp_action qml679f615fcadf44d4b85e425260afaa73_Click_Action_qml25d1c91fed7a4d0194af5e0255e4fac2) switched_#2 = basis
+              readlocal switched_#2
+      and let dummy_#34 =
+        switch
+          bool basis =
+            true
+          case adhocrecord(True_#1) cond_#12 = basis
+            makerecord adhocrecord(Void_#1)
+          case adhocrecord(False_#1) cond_#12 = basis
+            halt BLOCKED "Action guard mismatch"
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          makerecord adhocrecord(Void_#1)
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow._eHNP8JO6EeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._Z4h2MJNQEeO_KayZfGtJow Activity Node 'Request user to login' -> Decision Node 'ValidUser?'_#1))
+      makerecord adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._Z4h2MJNQEeO_KayZfGtJow Activity Node 'Request user to login' -> Decision Node 'ValidUser?'_#1)
+
+Loc_flow _jCinwMOtEeOkbLW0qDGG4A._Z4h2MJNQEeO_KayZfGtJow Activity Node 'Request user to login' -> Decision Node 'ValidUser?'_#1:
+  let dummy_#49 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._Z4h2MJNQEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._XvefAJNQEeO_KayZfGtJow Decision Node 'ValidUser?'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._XvefAJNQEeO_KayZfGtJow Decision Node 'ValidUser?'_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A._XvefAJNQEeO_KayZfGtJow Decision Node 'ValidUser?'_#1:
+  let dummy_#42 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._XvefAJNQEeO_KayZfGtJow
+  in
+    let decisionBasis_#1 =
+      let equalLhs_#3 =
+        switch
+          adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml049bdeb3147d4ef5949c16c65f31bc29)) basis =
+            readglobal qmlea94aa09365c4d32b6e8fa1b60f17a15_#1
+          case adhocrecord(Uninitialized_#1) rawValue_#6 = basis
+            halt DEFECT "'Entered user info' Variable cannot be used before it has been initialized"
+          case persistentrecord(Q_qml049bdeb3147d4ef5949c16c65f31bc29) rawValue_#6 = basis
+            readlocal rawValue_#6
+      in
+        let equalMatched_#3 =
+          blockdontcare
+            let instanceToMatch_#6 =
+              readlocal equalLhs_#3
+            and let instanceField_userName_#1 =
+              accessfield qml770130b5665e489f998cc15a23f89fb3
+                readlocal instanceToMatch_#6
+            and let instanceField_password_#1 =
+              accessfield qmlfea499de4b1f4dd9b37c090059b8ebd5
+                readlocal instanceToMatch_#6
+            and let matchItem_1_#1 =
+              and
+                equal
+                  "Armen"
+                  readlocal instanceField_userName_#1
+                equal
+                  "123"
+                  readlocal instanceField_password_#1
+            and let matchItem_2_#1 =
+              and
+                equal
+                  "Stephan"
+                  readlocal instanceField_userName_#1
+                equal
+                  "abc"
+                  readlocal instanceField_password_#1
+            in
+              equal
+                and
+                  equal
+                    readlocal matchItem_1_#1
+                    false
+                  equal
+                    readlocal matchItem_2_#1
+                    false
+                false
+        and let dummy_#43 =
+          switch
+            bool basis =
+              readlocal equalMatched_#3
+            case adhocrecord(True_#1) cond_#14 = basis
+              let instanceToMatch_#6 =
+                readlocal equalLhs_#3
+              and let instanceField_userName_#1 =
+                accessfield qml770130b5665e489f998cc15a23f89fb3
+                  readlocal instanceToMatch_#6
+              and let instanceField_password_#1 =
+                accessfield qmlfea499de4b1f4dd9b37c090059b8ebd5
+                  readlocal instanceToMatch_#6
+              and let matchItem_1_#1 =
+                and
+                  equal
+                    "Armen"
+                    readlocal instanceField_userName_#1
+                  equal
+                    "123"
+                    readlocal instanceField_password_#1
+              and let matchItem_2_#1 =
+                and
+                  equal
+                    "Stephan"
+                    readlocal instanceField_userName_#1
+                  equal
+                    "abc"
+                    readlocal instanceField_password_#1
+              and let dummy_#44 =
+                switch
+                  bool basis =
+                    readlocal matchItem_1_#1
+                  case adhocrecord(True_#1) cond_#15 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _jCinwMOtEeOkbLW0qDGG4A _XvefAJNQEeO_KayZfGtJow.matching _Xvj-kZNQEeO_KayZfGtJow.data _ClbxALZsEeOqzvOOQkKKwQ
+                  case adhocrecord(False_#1) cond_#15 = basis
+                    makerecord adhocrecord(Void_#1)
+              in
+                switch
+                  bool basis =
+                    readlocal matchItem_2_#1
+                  case adhocrecord(True_#1) cond_#16 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _jCinwMOtEeOkbLW0qDGG4A _XvefAJNQEeO_KayZfGtJow.matching _Xvj-kZNQEeO_KayZfGtJow.data _LWnSwLZsEeOqzvOOQkKKwQ
+                  case adhocrecord(False_#1) cond_#16 = basis
+                    makerecord adhocrecord(Void_#1)
+            case adhocrecord(False_#1) cond_#14 = basis
+              makerecord adhocrecord(Void_#1)
+        in
+          readlocal equalMatched_#3
+    in
+      switch
+        bool basis =
+          equal
+            readlocal decisionBasis_#1
+            true
+        case adhocrecord(True_#1) cond_#17 = basis
+          let dummy_#45 =
+            covercheckpoint decision.!decision.ad _frea4JPBEeO_KayZfGtJow _jCinwMOtEeOkbLW0qDGG4A _XvefAJNQEeO_KayZfGtJow.decision case _E0Y9MTAbEeePv92F-pQAUw
+          in
+            makesum adhocsum(adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._E0Y9MDAbEeePv92F-pQAUw Decision Node 'ValidUser?' -> Return Node 'Successful login'_#1), adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._wHHK8D7CEeeR2tkonHE4tA Decision Node 'ValidUser?' -> Activity Node 'Invalid Login'_#1))
+              makerecord adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._E0Y9MDAbEeePv92F-pQAUw Decision Node 'ValidUser?' -> Return Node 'Successful login'_#1)
+        case adhocrecord(False_#1) cond_#17 = basis
+          let dummy_#46 =
+            covercheckpoint decision.!decision.ad _frea4JPBEeO_KayZfGtJow _jCinwMOtEeOkbLW0qDGG4A _XvefAJNQEeO_KayZfGtJow.decision else
+          in
+            makesum adhocsum(adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._E0Y9MDAbEeePv92F-pQAUw Decision Node 'ValidUser?' -> Return Node 'Successful login'_#1), adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._wHHK8D7CEeeR2tkonHE4tA Decision Node 'ValidUser?' -> Activity Node 'Invalid Login'_#1))
+              makerecord adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._wHHK8D7CEeeR2tkonHE4tA Decision Node 'ValidUser?' -> Activity Node 'Invalid Login'_#1)
+
+Loc_flow _jCinwMOtEeOkbLW0qDGG4A._wHHK8D7CEeeR2tkonHE4tA Decision Node 'ValidUser?' -> Activity Node 'Invalid Login'_#1:
+  let dummy_#53 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._wHHK8D7CEeeR2tkonHE4tA
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._gLea8JNQEeO_KayZfGtJow Activity Node 'Invalid Login'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._gLea8JNQEeO_KayZfGtJow Activity Node 'Invalid Login'_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A._gLea8JNQEeO_KayZfGtJow Activity Node 'Invalid Login'_#1:
+  let dummy_#41 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._gLea8JNQEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._q3cSIJilEeO7LaO0iTzh9g Action #1 in Activity 'Invalid Login'_#1))
+      makerecord adhocrecord(Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._q3cSIJilEeO7LaO0iTzh9g Action #1 in Activity 'Invalid Login'_#1)
+
+Loc_invocation _jCinwMOtEeOkbLW0qDGG4A._q3cSIJilEeO7LaO0iTzh9g Action #1 in Activity 'Invalid Login'_#1:
+  let dummy_#40 =
+    let result_#17 =
+      let summable_#19 =
+        emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup))
+          record CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup):
+            field payload =
+              record CrimePersistentRecord(Q_qmlf70081db82ff4c97a0bedfeddb222955):
+                field text =
+                  <arg 0>
+                field qml0ef2b7dc795c449e9723aaf1743376a7 =
+                  <arg 1>
+          with arg 0 =
+            "Incorrect User"
+          with arg 1 =
+            makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#19
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._gLea8JNQEeO_KayZfGtJow._q3cSIJilEeO7LaO0iTzh9g
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._7kXO4LZTEeOjUOM1TU9Atg Activity Node 'Invalid Login' -> Activity Node 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_flow _jCinwMOtEeOkbLW0qDGG4A._7kXO4LZTEeOjUOM1TU9Atg Activity Node 'Invalid Login' -> Activity Node 'Request user to login'_#1)
+
+Loc_flow _jCinwMOtEeOkbLW0qDGG4A._7kXO4LZTEeOjUOM1TU9Atg Activity Node 'Invalid Login' -> Activity Node 'Request user to login'_#1:
+  let dummy_#51 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._7kXO4LZTEeOjUOM1TU9Atg
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow Activity Node 'Request user to login'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._8XGYoJNPEeO_KayZfGtJow Activity Node 'Request user to login'_#1)
+
+Loc_flow _jCinwMOtEeOkbLW0qDGG4A._E0Y9MDAbEeePv92F-pQAUw Decision Node 'ValidUser?' -> Return Node 'Successful login'_#1:
+  let dummy_#52 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._E0Y9MDAbEeePv92F-pQAUw
+  in
+    makesum adhocsum(adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._bJB0wJNQEeO_KayZfGtJow Return Node 'Successful login'_#1))
+      makerecord adhocrecord(Loc_node _jCinwMOtEeOkbLW0qDGG4A._bJB0wJNQEeO_KayZfGtJow Return Node 'Successful login'_#1)
+
+Loc_node _jCinwMOtEeOkbLW0qDGG4A._bJB0wJNQEeO_KayZfGtJow Return Node 'Successful login'_#1:
+  let dummy_#47 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._jCinwMOtEeOkbLW0qDGG4A._bJB0wJNQEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _ktnCcMOtEeOkbLW0qDGG4A Activity Node 'Login' -> Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_flow _ktnCcMOtEeOkbLW0qDGG4A Activity Node 'Login' -> Merge Node 'Merge'_#1)
+
+Loc_flow _ktnCcMOtEeOkbLW0qDGG4A Activity Node 'Login' -> Merge Node 'Merge'_#1:
+  let dummy_#78 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._ktnCcMOtEeOkbLW0qDGG4A
+  in
+    makesum adhocsum(adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1)
+
+Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1:
+  let dummy_#56 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._kBMMAJPDEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _qIStIJPDEeO_KayZfGtJow Merge Node 'Merge' -> Activity Node 'Start Shopping'_#1))
+      makerecord adhocrecord(Loc_flow _qIStIJPDEeO_KayZfGtJow Merge Node 'Merge' -> Activity Node 'Start Shopping'_#1)
+
+Loc_flow _qIStIJPDEeO_KayZfGtJow Merge Node 'Merge' -> Activity Node 'Start Shopping'_#1:
+  let dummy_#68 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._qIStIJPDEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_node _o1pZgJPDEeO_KayZfGtJow Activity Node 'Start Shopping'_#1))
+      makerecord adhocrecord(Loc_node _o1pZgJPDEeO_KayZfGtJow Activity Node 'Start Shopping'_#1)
+
+Loc_node _o1pZgJPDEeO_KayZfGtJow Activity Node 'Start Shopping'_#1:
+  let dummy_#7 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._o1pZgJPDEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _bUYnQJfREeO2kMTUvLWaPg Action #1 in Activity 'Start Shopping'_#1))
+      makerecord adhocrecord(Loc_invocation _bUYnQJfREeO2kMTUvLWaPg Action #1 in Activity 'Start Shopping'_#1)
+
+Loc_invocation _bUYnQJfREeO2kMTUvLWaPg Action #1 in Activity 'Start Shopping'_#1:
+  let dummy_#6 =
+    let result_#3 =
+      let summable_#4 =
+        emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qml6e8134b8c9934d56a4de3a6509ccf196_Display_Screen))
+          record CrimePersistentRecord(Outp_action qml6e8134b8c9934d56a4de3a6509ccf196_Display_Screen):
+            field payload =
+              record CrimePersistentRecord(Q_qml6e8134b8c9934d56a4de3a6509ccf196):
+                field qml9728b5aef5024b6da9cfddae7b3719e5_Form_Data_Instance =
+                  record CrimePersistentRecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5):
+                    field qml7d0387ac657b42ef90f76fcfdd630220 =
+                      TraceStringValue(TraceDontCare)
+                    field qml9ecbfd96726844b7b8a655fdc17c913d =
+                      TraceIntValue(TraceDontCare)
+                field qml9728b5aef5024b6da9cfddae7b3719e5_Form_Widget_Status_Data_Instance =
+                  record CrimePersistentRecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5_Form_Widget_Status_Data):
+                    field qml7d0387ac657b42ef90f76fcfdd630220 =
+                      <arg 0>
+                    field qml9ecbfd96726844b7b8a655fdc17c913d =
+                      <arg 1>
+                    field qml66eda3c643a040948766296a7fe0d1ea =
+                      <arg 2>
+                field qml602c51f2cc314627900b245c52678501 =
+                  TraceEnumValue(TraceType.Enum(Q_WidgetStatus), TraceDontCare)
+                field qmlcd2fef20e2134d92aa047dc60a0ed18e_Instance =
+                  <arg 3>
+          with arg 0 =
+            makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+          with arg 1 =
+            makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+          with arg 2 =
+            makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+          with arg 3 =
+            readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#4
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._o1pZgJPDEeO_KayZfGtJow._bUYnQJfREeO2kMTUvLWaPg
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _tz-CwJPFEeO_KayZfGtJow Action #2 in Activity 'Start Shopping'_#1))
+      makerecord adhocrecord(Loc_invocation _tz-CwJPFEeO_KayZfGtJow Action #2 in Activity 'Start Shopping'_#1)
+
+Loc_invocation _tz-CwJPFEeO_KayZfGtJow Action #2 in Activity 'Start Shopping'_#1:
+  let dummy_#5 =
+    let result_#2 =
+      let summable_#3 =
+        covercheckpoint requirement.!requirement.ad _frea4JPBEeO_KayZfGtJow _o1pZgJPDEeO_KayZfGtJow.invocation _tz-CwJPFEeO_KayZfGtJow.Shopping page displays after successful login
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#3
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._o1pZgJPDEeO_KayZfGtJow._tz-CwJPFEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _5N69kJPFEeO_KayZfGtJow Activity Node 'Start Shopping' -> Event Node 'Choose Next Step'_#1))
+      makerecord adhocrecord(Loc_flow _5N69kJPFEeO_KayZfGtJow Activity Node 'Start Shopping' -> Event Node 'Choose Next Step'_#1)
+
+Loc_flow _5N69kJPFEeO_KayZfGtJow Activity Node 'Start Shopping' -> Event Node 'Choose Next Step'_#1:
+  let dummy_#69 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._5N69kJPFEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_node _0fVHgJPFEeO_KayZfGtJow Event Node 'Choose Next Step'_#1))
+      makerecord adhocrecord(Loc_node _0fVHgJPFEeO_KayZfGtJow Event Node 'Choose Next Step'_#1)
+
+Loc_node _0fVHgJPFEeO_KayZfGtJow Event Node 'Choose Next Step'_#1:
+  let dummy_#57 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._0fVHgJPFEeO_KayZfGtJow
+  in
+    let precond_Check Out_#1 =
+      let precond_#3 =
+        let equal_#1 =
+          blockdontcare
+            equal
+              false
+              lessthan
+                length
+                  readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+                1
+        in
+          readlocal equal_#1
+      and let dummy_#58 =
+        switch
+          bool basis =
+            readlocal precond_#3
+          case adhocrecord(True_#1) cond_#18 = basis
+            covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _9b6oAJPFEeO_KayZfGtJow.invocation _Ea5zYJPGEeO_KayZfGtJow.decision true
+          case adhocrecord(False_#1) cond_#18 = basis
+            makerecord adhocrecord(Void_#1)
+      in
+        readlocal precond_#3
+    in
+      switch
+        bool basis =
+          equal
+            and
+              equal
+                readlocal precond_Check Out_#1
+                false
+              equal
+                true
+                false
+              equal
+                true
+                false
+            false
+        case adhocrecord(True_#1) cond_#19 = basis
+          switch
+            adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196), persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action), persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e)) basis =
+              receive adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196), persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action), persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e))
+            case persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) switched_#4 = basis
+              accessfield successor
+                switch
+                  adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                    let found_#1 =
+                      switch
+                        bool basis =
+                          switch
+                            bool basis =
+                              readlocal precond_Check Out_#1
+                            case adhocrecord(True_#1) cond_#21 = basis
+                              true
+                            case adhocrecord(False_#1) cond_#21 = basis
+                              false
+                        case adhocrecord(True_#1) cond_#20 = basis
+                          switch
+                            adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(None_#1)
+                            case adhocrecord(Some_#1) switched_#6 = basis
+                              halt DEFECT "Non deterministic selection of next possible event"
+                            case adhocrecord(None_#1) switched_#6 = basis
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(Some_#1)
+                                  adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1)) successor = 
+                                    makesum adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1))
+                                      makerecord adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1)
+                                        adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196), adhocrecord(Not_yet_received_#1)) maybe received = 
+                                          makesum adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196), adhocrecord(Not_yet_received_#1))
+                                            readlocal switched_#4
+                        case adhocrecord(False_#1) cond_#20 = basis
+                          makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                            makerecord adhocrecord(None_#1)
+                    in
+                      readlocal found_#1
+                  case adhocrecord(Some_#1) switched_#5 = basis
+                    readlocal switched_#5
+                  case adhocrecord(None_#1) switched_#5 = basis
+                    halt BLOCKED "Action guard mismatch"
+            case persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) switched_#4 = basis
+              accessfield successor
+                switch
+                  adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                    let found_#2 =
+                      switch
+                        bool basis =
+                          switch
+                            bool basis =
+                              true
+                            case adhocrecord(True_#1) cond_#23 = basis
+                              blockdontcare
+                                true
+                            case adhocrecord(False_#1) cond_#23 = basis
+                              false
+                        case adhocrecord(True_#1) cond_#22 = basis
+                          switch
+                            adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(None_#1)
+                            case adhocrecord(Some_#1) switched_#8 = basis
+                              halt DEFECT "Non deterministic selection of next possible event"
+                            case adhocrecord(None_#1) switched_#8 = basis
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(Some_#1)
+                                  adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1)) successor = 
+                                    makesum adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1))
+                                      makerecord adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1)
+                                        adhocsum(persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action), adhocrecord(Not_yet_received_#1)) maybe received = 
+                                          makesum adhocsum(persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action), adhocrecord(Not_yet_received_#1))
+                                            readlocal switched_#4
+                        case adhocrecord(False_#1) cond_#22 = basis
+                          makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                            makerecord adhocrecord(None_#1)
+                    in
+                      readlocal found_#2
+                  case adhocrecord(Some_#1) switched_#7 = basis
+                    readlocal switched_#7
+                  case adhocrecord(None_#1) switched_#7 = basis
+                    halt BLOCKED "Action guard mismatch"
+            case persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) switched_#4 = basis
+              accessfield successor
+                switch
+                  adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                    let found_#3 =
+                      switch
+                        bool basis =
+                          switch
+                            bool basis =
+                              true
+                            case adhocrecord(True_#1) cond_#25 = basis
+                              true
+                            case adhocrecord(False_#1) cond_#25 = basis
+                              false
+                        case adhocrecord(True_#1) cond_#24 = basis
+                          switch
+                            adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1)) basis =
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(None_#1)
+                            case adhocrecord(Some_#1) switched_#10 = basis
+                              halt DEFECT "Non deterministic selection of next possible event"
+                            case adhocrecord(None_#1) switched_#10 = basis
+                              makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                                makerecord adhocrecord(Some_#1)
+                                  adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1)) successor = 
+                                    makesum adhocsum(adhocrecord(Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1), adhocrecord(Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1), adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1))
+                                      makerecord adhocrecord(Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1)
+                                        adhocsum(persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e), adhocrecord(Not_yet_received_#1)) maybe received = 
+                                          makesum adhocsum(persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e), adhocrecord(Not_yet_received_#1))
+                                            readlocal switched_#4
+                        case adhocrecord(False_#1) cond_#24 = basis
+                          makesum adhocsum(adhocrecord(Some_#1), adhocrecord(None_#1))
+                            makerecord adhocrecord(None_#1)
+                    in
+                      readlocal found_#3
+                  case adhocrecord(Some_#1) switched_#9 = basis
+                    readlocal switched_#9
+                  case adhocrecord(None_#1) switched_#9 = basis
+                    halt BLOCKED "Action guard mismatch"
+        case adhocrecord(False_#1) cond_#19 = basis
+          halt DEFECT "Cannot make progress in the model because all the preconditions are false"
+
+Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_#1:
+  let successor_#4 =
+    switch
+      adhocsum(persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e), adhocrecord(Not_yet_received_#1)) basis =
+        accessfield maybe received
+          readlocal Loc_flow _vS8okJPNEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Remove Item'_locationData_#1
+      case persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) switched_#22 = basis
+        makesum adhocsum(adhocrecord(Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1))
+          makerecord adhocrecord(Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1)
+            persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) received = 
+              readlocal switched_#22
+      case adhocrecord(Not_yet_received_#1) switched_#22 = basis
+        switch
+          bool basis =
+            equal
+              equal
+                true
+                false
+              false
+          case adhocrecord(True_#1) cond_#41 = basis
+            switch
+              adhocsum(persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e)) basis =
+                receive adhocsum(persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e))
+              case persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) switched_#23 = basis
+                accessfield successor
+                  switch
+                    adhocsum(adhocrecord(Some_#5), adhocrecord(None_#1)) basis =
+                      let found_#7 =
+                        switch
+                          bool basis =
+                            switch
+                              bool basis =
+                                true
+                              case adhocrecord(True_#1) cond_#43 = basis
+                                true
+                              case adhocrecord(False_#1) cond_#43 = basis
+                                false
+                          case adhocrecord(True_#1) cond_#42 = basis
+                            switch
+                              adhocsum(adhocrecord(Some_#5), adhocrecord(None_#1)) basis =
+                                makesum adhocsum(adhocrecord(Some_#5), adhocrecord(None_#1))
+                                  makerecord adhocrecord(None_#1)
+                              case adhocrecord(Some_#5) switched_#25 = basis
+                                halt DEFECT "Non deterministic selection of next possible event"
+                              case adhocrecord(None_#1) switched_#25 = basis
+                                makesum adhocsum(adhocrecord(Some_#5), adhocrecord(None_#1))
+                                  makerecord adhocrecord(Some_#5)
+                                    adhocsum(adhocrecord(Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1)) successor = 
+                                      makesum adhocsum(adhocrecord(Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1))
+                                        makerecord adhocrecord(Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1)
+                                          persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) received = 
+                                            readlocal switched_#23
+                          case adhocrecord(False_#1) cond_#42 = basis
+                            makesum adhocsum(adhocrecord(Some_#5), adhocrecord(None_#1))
+                              makerecord adhocrecord(None_#1)
+                      in
+                        readlocal found_#7
+                    case adhocrecord(Some_#5) switched_#24 = basis
+                      readlocal switched_#24
+                    case adhocrecord(None_#1) switched_#24 = basis
+                      halt BLOCKED "Action guard mismatch"
+          case adhocrecord(False_#1) cond_#41 = basis
+            halt DEFECT "Cannot make progress in the model because all the preconditions are false"
+  and let dummy_#73 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._vS8okJPNEeO_KayZfGtJow
+  in
+    readlocal successor_#4
+
+Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_#1:
+  let dummy_#32 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._p4QhgJPNEeO_KayZfGtJow
+  in
+    let summable_#16 =
+      let received_#9 =
+        accessfield received
+          readlocal Loc_node _p4QhgJPNEeO_KayZfGtJow Activity Node 'Remove Item'_locationData_#1
+      in
+        makerecord adhocrecord(Loc_invocation _fqSQgJfREeO2kMTUvLWaPg Action #1 in Activity 'Remove Item'_#1)
+          persistentrecord(Inp_action qml49453deee3954c19a0fccb54c65d5735_Click_Action_qmlcd2fef20e2134d92aa047dc60a0ed18e) received = 
+            readlocal received_#9
+    in
+      makesum adhocsum(adhocrecord(Loc_invocation _fqSQgJfREeO2kMTUvLWaPg Action #1 in Activity 'Remove Item'_#1))
+        readlocal summable_#16
+
+Loc_invocation _fqSQgJfREeO2kMTUvLWaPg Action #1 in Activity 'Remove Item'_#1:
+  let received_#8 =
+    blockdontcare
+      accessfield received
+        readlocal Loc_invocation _fqSQgJfREeO2kMTUvLWaPg Action #1 in Activity 'Remove Item'_locationData_#1
+  and let dummy_#30 =
+    let result_#13 =
+      let summable_#15 =
+        let input_#3 =
+          blockdontcare
+            accessfield payload
+              readlocal received_#8
+        and let dummy_#31 =
+          switch
+            bool basis =
+              equal
+                readlocal input_#3
+                switch
+                  bool basis =
+                    lessthan
+                      length
+                        flatmap source
+                          readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+                        flatmap function of element as element_#3
+                          switch
+                            bool basis =
+                              blockdontcare
+                                let instanceToMatch_#5 =
+                                  readlocal element_#3
+                                and let matchField_sku_alt_1_#3 =
+                                  equal
+                                    "CQ_0001"
+                                    accessfield qmlcb13787b045a4f888ff43daae3612b3b
+                                      readlocal instanceToMatch_#5
+                                in
+                                  and
+                                    equal
+                                      equal
+                                        readlocal matchField_sku_alt_1_#3
+                                        false
+                                      false
+                                    equal
+                                      equal
+                                        true
+                                        false
+                                      false
+                            case adhocrecord(True_#1) cond_#11 = basis
+                              let elem0_#3 =
+                                readlocal element_#3
+                              in
+                                makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                                  readlocal elem0_#3
+                            case adhocrecord(False_#1) cond_#11 = basis
+                              makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                      1
+                  case adhocrecord(True_#1) cond_#10 = basis
+                    halt BLOCKED "No matching rows"
+                  case adhocrecord(False_#1) cond_#10 = basis
+                    accesselement
+                      flatmap source
+                        readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+                      flatmap function of element as element_#3
+                        switch
+                          bool basis =
+                            blockdontcare
+                              let instanceToMatch_#5 =
+                                readlocal element_#3
+                              and let matchField_sku_alt_1_#3 =
+                                equal
+                                  "CQ_0001"
+                                  accessfield qmlcb13787b045a4f888ff43daae3612b3b
+                                    readlocal instanceToMatch_#5
+                              in
+                                and
+                                  equal
+                                    equal
+                                      readlocal matchField_sku_alt_1_#3
+                                      false
+                                    false
+                                  equal
+                                    equal
+                                      true
+                                      false
+                                    false
+                          case adhocrecord(True_#1) cond_#11 = basis
+                            let elem0_#3 =
+                              readlocal element_#3
+                            in
+                              makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                                readlocal elem0_#3
+                          case adhocrecord(False_#1) cond_#11 = basis
+                            makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                      0
+            case adhocrecord(True_#1) cond_#9 = basis
+              makerecord adhocrecord(Void_#1)
+            case adhocrecord(False_#1) cond_#9 = basis
+              halt BLOCKED "Clicked UI Table row mismatch"
+        in
+          readlocal input_#3
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Invalid_Datatable_Entry_#1), persistentrecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+          readlocal summable_#15
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._p4QhgJPNEeO_KayZfGtJow._fqSQgJfREeO2kMTUvLWaPg
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _jKelcJPOEeO_KayZfGtJow Action #2 in Activity 'Remove Item'_#1))
+      makerecord adhocrecord(Loc_invocation _jKelcJPOEeO_KayZfGtJow Action #2 in Activity 'Remove Item'_#1)
+
+Loc_invocation _jKelcJPOEeO_KayZfGtJow Action #2 in Activity 'Remove Item'_#1:
+  let dummy_#29 =
+    let result_#12 =
+      let summable_#14 =
+        emit CrimeEmit.NarrativeProvider
+          <arg 0>
+          with arg 0 =
+            blockdontcare
+              "Remove CQ_0001"
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#14
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._p4QhgJPNEeO_KayZfGtJow._jKelcJPOEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _qfxYAJPOEeO_KayZfGtJow Action #3 in Activity 'Remove Item'_#1))
+      makerecord adhocrecord(Loc_invocation _qfxYAJPOEeO_KayZfGtJow Action #3 in Activity 'Remove Item'_#1)
+
+Loc_invocation _qfxYAJPOEeO_KayZfGtJow Action #3 in Activity 'Remove Item'_#1:
+  let dummy_#28 =
+    let result_#11 =
+      let summable_#13 =
+        writeglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1 =
+          flatmap source
+            readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+          flatmap function of element as element_#2
+            switch
+              bool basis =
+                blockdontcare
+                  let instanceToMatch_#4 =
+                    readlocal element_#2
+                  and let matchField_sku_alt_1_#2 =
+                    equal
+                      "CQ_0001"
+                      accessfield qmlcb13787b045a4f888ff43daae3612b3b
+                        readlocal instanceToMatch_#4
+                  in
+                    and
+                      equal
+                        equal
+                          readlocal matchField_sku_alt_1_#2
+                          false
+                        false
+                      equal
+                        equal
+                          true
+                          false
+                        false
+              case adhocrecord(True_#1) cond_#8 = basis
+                makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+              case adhocrecord(False_#1) cond_#8 = basis
+                makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                  readlocal element_#2
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Invalid_Datatable_Entry_#1), adhocrecord(Void_#1))
+          readlocal summable_#13
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._p4QhgJPNEeO_KayZfGtJow._qfxYAJPOEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _094VoJPOEeO_KayZfGtJow Activity Node 'Remove Item' -> Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_flow _094VoJPOEeO_KayZfGtJow Activity Node 'Remove Item' -> Merge Node 'Merge'_#1)
+
+Loc_flow _094VoJPOEeO_KayZfGtJow Activity Node 'Remove Item' -> Merge Node 'Merge'_#1:
+  let dummy_#74 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._094VoJPOEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1)
+
+Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_#1:
+  let successor_#3 =
+    switch
+      adhocsum(persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action), adhocrecord(Not_yet_received_#1)) basis =
+        accessfield maybe received
+          readlocal Loc_flow _w_aOkJPGEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Add Item'_locationData_#1
+      case persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) switched_#18 = basis
+        makesum adhocsum(adhocrecord(Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1))
+          makerecord adhocrecord(Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1)
+            persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) received = 
+              readlocal switched_#18
+      case adhocrecord(Not_yet_received_#1) switched_#18 = basis
+        switch
+          bool basis =
+            equal
+              equal
+                true
+                false
+              false
+          case adhocrecord(True_#1) cond_#38 = basis
+            switch
+              adhocsum(persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action)) basis =
+                receive adhocsum(persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action))
+              case persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) switched_#19 = basis
+                accessfield successor
+                  switch
+                    adhocsum(adhocrecord(Some_#4), adhocrecord(None_#1)) basis =
+                      let found_#6 =
+                        switch
+                          bool basis =
+                            switch
+                              bool basis =
+                                true
+                              case adhocrecord(True_#1) cond_#40 = basis
+                                blockdontcare
+                                  true
+                              case adhocrecord(False_#1) cond_#40 = basis
+                                false
+                          case adhocrecord(True_#1) cond_#39 = basis
+                            switch
+                              adhocsum(adhocrecord(Some_#4), adhocrecord(None_#1)) basis =
+                                makesum adhocsum(adhocrecord(Some_#4), adhocrecord(None_#1))
+                                  makerecord adhocrecord(None_#1)
+                              case adhocrecord(Some_#4) switched_#21 = basis
+                                halt DEFECT "Non deterministic selection of next possible event"
+                              case adhocrecord(None_#1) switched_#21 = basis
+                                makesum adhocsum(adhocrecord(Some_#4), adhocrecord(None_#1))
+                                  makerecord adhocrecord(Some_#4)
+                                    adhocsum(adhocrecord(Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1)) successor = 
+                                      makesum adhocsum(adhocrecord(Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1))
+                                        makerecord adhocrecord(Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1)
+                                          persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) received = 
+                                            readlocal switched_#19
+                          case adhocrecord(False_#1) cond_#39 = basis
+                            makesum adhocsum(adhocrecord(Some_#4), adhocrecord(None_#1))
+                              makerecord adhocrecord(None_#1)
+                      in
+                        readlocal found_#6
+                    case adhocrecord(Some_#4) switched_#20 = basis
+                      readlocal switched_#20
+                    case adhocrecord(None_#1) switched_#20 = basis
+                      halt BLOCKED "Action guard mismatch"
+          case adhocrecord(False_#1) cond_#38 = basis
+            halt DEFECT "Cannot make progress in the model because all the preconditions are false"
+  and let dummy_#71 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._w_aOkJPGEeO_KayZfGtJow
+  in
+    readlocal successor_#3
+
+Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_#1:
+  let dummy_#16 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._vOttAJPGEeO_KayZfGtJow
+  in
+    let summable_#9 =
+      let received_#7 =
+        accessfield received
+          readlocal Loc_node _vOttAJPGEeO_KayZfGtJow Activity Node 'Add Item'_locationData_#1
+      in
+        makerecord adhocrecord(Loc_invocation _3vkTwJPGEeO_KayZfGtJow Action #1 in Activity 'Add Item'_#1)
+          persistentrecord(Inp_action qml9728b5aef5024b6da9cfddae7b3719e5_Fill_Form_Action) received = 
+            readlocal received_#7
+    in
+      makesum adhocsum(adhocrecord(Loc_invocation _3vkTwJPGEeO_KayZfGtJow Action #1 in Activity 'Add Item'_#1))
+        readlocal summable_#9
+
+Loc_invocation _3vkTwJPGEeO_KayZfGtJow Action #1 in Activity 'Add Item'_#1:
+  let received_#6 =
+    blockdontcare
+      accessfield received
+        readlocal Loc_invocation _3vkTwJPGEeO_KayZfGtJow Action #1 in Activity 'Add Item'_locationData_#1
+  and let dummy_#14 =
+    let result_#7 =
+      let summable_#8 =
+        let input_#2 =
+          blockdontcare
+            accessfield payload
+              readlocal received_#6
+        in
+          readlocal input_#2
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5))
+          readlocal summable_#8
+    and let dummy_#15 =
+      writeglobal qml877ca92107364c019f9a2bbad37aec3b_#1 =
+        readlocal result_#7
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._vOttAJPGEeO_KayZfGtJow._3vkTwJPGEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _7zajsJPGEeO_KayZfGtJow Action #2 in Activity 'Add Item'_#1))
+      makerecord adhocrecord(Loc_invocation _7zajsJPGEeO_KayZfGtJow Action #2 in Activity 'Add Item'_#1)
+
+Loc_invocation _7zajsJPGEeO_KayZfGtJow Action #2 in Activity 'Add Item'_#1:
+  let dummy_#12 =
+    let result_#6 =
+      let received_#5 =
+        blockdontcare
+          switch
+            adhocsum(persistentrecord(Inp_action qml66eda3c643a040948766296a7fe0d1ea_Click_Action_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+              receive adhocsum(persistentrecord(Inp_action qml66eda3c643a040948766296a7fe0d1ea_Click_Action_qml9728b5aef5024b6da9cfddae7b3719e5))
+            case persistentrecord(Inp_action qml66eda3c643a040948766296a7fe0d1ea_Click_Action_qml9728b5aef5024b6da9cfddae7b3719e5) switched_#1 = basis
+              readlocal switched_#1
+      and let dummy_#13 =
+        switch
+          bool basis =
+            true
+          case adhocrecord(True_#1) cond_#1 = basis
+            makerecord adhocrecord(Void_#1)
+          case adhocrecord(False_#1) cond_#1 = basis
+            halt BLOCKED "Action guard mismatch"
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          makerecord adhocrecord(Void_#1)
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._vOttAJPGEeO_KayZfGtJow._7zajsJPGEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _-OpQAJPGEeO_KayZfGtJow Action #3 in Activity 'Add Item'_#1))
+      makerecord adhocrecord(Loc_invocation _-OpQAJPGEeO_KayZfGtJow Action #3 in Activity 'Add Item'_#1)
+
+Loc_invocation _-OpQAJPGEeO_KayZfGtJow Action #3 in Activity 'Add Item'_#1:
+  let dummy_#11 =
+    let result_#5 =
+      let summable_#7 =
+        emit CrimeEmit.NarrativeProvider
+          <arg 0>
+          with arg 0 =
+            blockdontcare
+              stringconcat
+                stringconcat
+                  stringconcat
+                    stringconcat
+                      "Add item with sku "
+                      accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                        switch
+                          adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+                            readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+                          case adhocrecord(Uninitialized_#1) rawValue_#1 = basis
+                            halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+                          case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#1 = basis
+                            readlocal rawValue_#1
+                    " and qty "
+                  inttostring
+                    accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                      switch
+                        adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+                          readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+                        case adhocrecord(Uninitialized_#1) rawValue_#2 = basis
+                          halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+                        case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#2 = basis
+                          readlocal rawValue_#2
+                " to shopping cart"
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#7
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._vOttAJPGEeO_KayZfGtJow._-OpQAJPGEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _X_IykJPHEeO_KayZfGtJow Activity Node 'Add Item' -> Decision Node 'Valid Entry?'_#1))
+      makerecord adhocrecord(Loc_flow _X_IykJPHEeO_KayZfGtJow Activity Node 'Add Item' -> Decision Node 'Valid Entry?'_#1)
+
+Loc_flow _X_IykJPHEeO_KayZfGtJow Activity Node 'Add Item' -> Decision Node 'Valid Entry?'_#1:
+  let dummy_#72 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._X_IykJPHEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_node _V5AMgJPHEeO_KayZfGtJow Decision Node 'Valid Entry?'_#1))
+      makerecord adhocrecord(Loc_node _V5AMgJPHEeO_KayZfGtJow Decision Node 'Valid Entry?'_#1)
+
+Loc_node _V5AMgJPHEeO_KayZfGtJow Decision Node 'Valid Entry?'_#1:
+  let dummy_#59 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._V5AMgJPHEeO_KayZfGtJow
+  in
+    let decisionBasis_#2 =
+      let equalLhs_#4 =
+        switch
+          adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+            readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+          case adhocrecord(Uninitialized_#1) rawValue_#7 = basis
+            halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+          case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#7 = basis
+            readlocal rawValue_#7
+      in
+        let equalMatched_#4 =
+          blockdontcare
+            let instanceToMatch_#7 =
+              readlocal equalLhs_#4
+            and let matchField_sku_alt_1_#4 =
+              equal
+                "CQ_0001"
+                accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                  readlocal instanceToMatch_#7
+            and let matchField_sku_alt_2_#2 =
+              equal
+                "CQ_0002"
+                accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                  readlocal instanceToMatch_#7
+            and let matchField_sku_alt_3_#1 =
+              equal
+                "CQ_0003"
+                accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                  readlocal instanceToMatch_#7
+            and let matchField_qty_alt_1_#2 =
+              let instanceToMatch_#8 =
+                accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                  readlocal instanceToMatch_#7
+              in
+                equal
+                  equal
+                    and
+                      equal
+                        lessthan
+                          readlocal instanceToMatch_#8
+                          1
+                        false
+                      equal
+                        lessthan
+                          9
+                          readlocal instanceToMatch_#8
+                        false
+                    false
+                  false
+            in
+              and
+                equal
+                  and
+                    equal
+                      readlocal matchField_sku_alt_1_#4
+                      false
+                    equal
+                      readlocal matchField_sku_alt_2_#2
+                      false
+                    equal
+                      readlocal matchField_sku_alt_3_#1
+                      false
+                  false
+                equal
+                  equal
+                    readlocal matchField_qty_alt_1_#2
+                    false
+                  false
+        and let dummy_#60 =
+          switch
+            bool basis =
+              readlocal equalMatched_#4
+            case adhocrecord(True_#1) cond_#26 = basis
+              let instanceToMatch_#7 =
+                readlocal equalLhs_#4
+              and let matchField_sku_alt_1_#4 =
+                equal
+                  "CQ_0001"
+                  accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                    readlocal instanceToMatch_#7
+              and let matchField_sku_alt_2_#2 =
+                equal
+                  "CQ_0002"
+                  accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                    readlocal instanceToMatch_#7
+              and let matchField_sku_alt_3_#1 =
+                equal
+                  "CQ_0003"
+                  accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                    readlocal instanceToMatch_#7
+              and let matchField_qty_alt_1_#2 =
+                let instanceToMatch_#8 =
+                  accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                    readlocal instanceToMatch_#7
+                in
+                  equal
+                    equal
+                      and
+                        equal
+                          lessthan
+                            readlocal instanceToMatch_#8
+                            1
+                          false
+                        equal
+                          lessthan
+                            9
+                            readlocal instanceToMatch_#8
+                          false
+                      false
+                    false
+              and let dummy_#61 =
+                switch
+                  bool basis =
+                    readlocal matchField_sku_alt_1_#4
+                  case adhocrecord(True_#1) cond_#27 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.matching _5cbjc5VhEeOWHofjCt1_6A.data _DqmH85VfEeOWHofjCt1_6A
+                  case adhocrecord(False_#1) cond_#27 = basis
+                    makerecord adhocrecord(Void_#1)
+              and let dummy_#62 =
+                switch
+                  bool basis =
+                    readlocal matchField_sku_alt_2_#2
+                  case adhocrecord(True_#1) cond_#28 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.matching _5cbjc5VhEeOWHofjCt1_6A.data _cEiyALZTEeOjUOM1TU9Atg
+                  case adhocrecord(False_#1) cond_#28 = basis
+                    makerecord adhocrecord(Void_#1)
+              and let dummy_#63 =
+                switch
+                  bool basis =
+                    readlocal matchField_sku_alt_3_#1
+                  case adhocrecord(True_#1) cond_#29 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.matching _5cbjc5VhEeOWHofjCt1_6A.data _rWCwsLZUEeOjUOM1TU9Atg
+                  case adhocrecord(False_#1) cond_#29 = basis
+                    makerecord adhocrecord(Void_#1)
+              and let dummy_#64 =
+                switch
+                  bool basis =
+                    readlocal matchField_qty_alt_1_#2
+                  case adhocrecord(True_#1) cond_#30 = basis
+                    covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.matching _5cbjc5VhEeOWHofjCt1_6A.data _HvHfELZVEeOjUOM1TU9Atg
+                  case adhocrecord(False_#1) cond_#30 = basis
+                    makerecord adhocrecord(Void_#1)
+              in
+                covercheckpoint data.!data.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.value _DqmH8JVfEeOWHofjCt1_6A
+            case adhocrecord(False_#1) cond_#26 = basis
+              makerecord adhocrecord(Void_#1)
+        in
+          readlocal equalMatched_#4
+    in
+      switch
+        bool basis =
+          equal
+            readlocal decisionBasis_#2
+            true
+        case adhocrecord(True_#1) cond_#31 = basis
+          let dummy_#65 =
+            covercheckpoint decision.!decision.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.decision case _E0qqATAbEeePv92F-pQAUw
+          in
+            makesum adhocsum(adhocrecord(Loc_flow _E0qqADAbEeePv92F-pQAUw Decision Node 'Valid Entry?' -> Activity Node 'Add To Cart'_#1), adhocrecord(Loc_flow _-ydlED7CEeeR2tkonHE4tA Decision Node 'Valid Entry?' -> Activity Node 'Invalid Entry'_#1))
+              makerecord adhocrecord(Loc_flow _E0qqADAbEeePv92F-pQAUw Decision Node 'Valid Entry?' -> Activity Node 'Add To Cart'_#1)
+        case adhocrecord(False_#1) cond_#31 = basis
+          let dummy_#66 =
+            covercheckpoint decision.!decision.ad _frea4JPBEeO_KayZfGtJow _V5AMgJPHEeO_KayZfGtJow.decision else
+          in
+            makesum adhocsum(adhocrecord(Loc_flow _E0qqADAbEeePv92F-pQAUw Decision Node 'Valid Entry?' -> Activity Node 'Add To Cart'_#1), adhocrecord(Loc_flow _-ydlED7CEeeR2tkonHE4tA Decision Node 'Valid Entry?' -> Activity Node 'Invalid Entry'_#1))
+              makerecord adhocrecord(Loc_flow _-ydlED7CEeeR2tkonHE4tA Decision Node 'Valid Entry?' -> Activity Node 'Invalid Entry'_#1)
+
+Loc_flow _-ydlED7CEeeR2tkonHE4tA Decision Node 'Valid Entry?' -> Activity Node 'Invalid Entry'_#1:
+  let dummy_#80 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._-ydlED7CEeeR2tkonHE4tA
+  in
+    makesum adhocsum(adhocrecord(Loc_node _kI4LkJPHEeO_KayZfGtJow Activity Node 'Invalid Entry'_#1))
+      makerecord adhocrecord(Loc_node _kI4LkJPHEeO_KayZfGtJow Activity Node 'Invalid Entry'_#1)
+
+Loc_node _kI4LkJPHEeO_KayZfGtJow Activity Node 'Invalid Entry'_#1:
+  let dummy_#23 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._kI4LkJPHEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _2RGDQJirEeOyuJB9P_9Wlw Action #1 in Activity 'Invalid Entry'_#1))
+      makerecord adhocrecord(Loc_invocation _2RGDQJirEeOyuJB9P_9Wlw Action #1 in Activity 'Invalid Entry'_#1)
+
+Loc_invocation _2RGDQJirEeOyuJB9P_9Wlw Action #1 in Activity 'Invalid Entry'_#1:
+  switch
+    bool basis =
+      let precond_#2 =
+        let equalLhs_#2 =
+          switch
+            adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+              readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+            case adhocrecord(Uninitialized_#1) rawValue_#4 = basis
+              halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+            case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#4 = basis
+              readlocal rawValue_#4
+        in
+          let equalMatched_#2 =
+            blockdontcare
+              let instanceToMatch_#3 =
+                readlocal equalLhs_#2
+              and let matchField_sku_alt_1_#1 =
+                equal
+                  "abc"
+                  accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                    readlocal instanceToMatch_#3
+              and let matchField_sku_alt_2_#1 =
+                equal
+                  "12&%"
+                  accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                    readlocal instanceToMatch_#3
+              in
+                and
+                  equal
+                    and
+                      equal
+                        readlocal matchField_sku_alt_1_#1
+                        false
+                      equal
+                        readlocal matchField_sku_alt_2_#1
+                        false
+                    false
+                  equal
+                    equal
+                      true
+                      false
+                    false
+          and let dummy_#21 =
+            switch
+              bool basis =
+                readlocal equalMatched_#2
+              case adhocrecord(True_#1) cond_#6 = basis
+                makerecord adhocrecord(Void_#1)
+              case adhocrecord(False_#1) cond_#6 = basis
+                makerecord adhocrecord(Void_#1)
+          in
+            readlocal equalMatched_#2
+      and let dummy_#20 =
+        switch
+          bool basis =
+            readlocal precond_#2
+          case adhocrecord(True_#1) cond_#7 = basis
+            covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _kI4LkJPHEeO_KayZfGtJow.invocation _2RGDQJirEeOyuJB9P_9Wlw.decision true
+          case adhocrecord(False_#1) cond_#7 = basis
+            covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _kI4LkJPHEeO_KayZfGtJow.invocation _2RGDQJirEeOyuJB9P_9Wlw.decision false
+      in
+        readlocal precond_#2
+    case adhocrecord(True_#1) cond_#5 = basis
+      let dummy_#22 =
+        let result_#9 =
+          let summable_#11 =
+            emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup))
+              record CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup):
+                field payload =
+                  record CrimePersistentRecord(Q_qmlf70081db82ff4c97a0bedfeddb222955):
+                    field text =
+                      <arg 0>
+                    field qml0ef2b7dc795c449e9723aaf1743376a7 =
+                      <arg 1>
+              with arg 0 =
+                "Invalid sku"
+              with arg 1 =
+                makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+          in
+            makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+              readlocal summable_#11
+        in
+          covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._kI4LkJPHEeO_KayZfGtJow._2RGDQJirEeOyuJB9P_9Wlw
+      in
+        makesum adhocsum(adhocrecord(Loc_invocation _WpSIAJirEeOyuJB9P_9Wlw Action #2 in Activity 'Invalid Entry'_#1))
+          makerecord adhocrecord(Loc_invocation _WpSIAJirEeOyuJB9P_9Wlw Action #2 in Activity 'Invalid Entry'_#1)
+    case adhocrecord(False_#1) cond_#5 = basis
+      makesum adhocsum(adhocrecord(Loc_invocation _WpSIAJirEeOyuJB9P_9Wlw Action #2 in Activity 'Invalid Entry'_#1))
+        makerecord adhocrecord(Loc_invocation _WpSIAJirEeOyuJB9P_9Wlw Action #2 in Activity 'Invalid Entry'_#1)
+
+Loc_invocation _WpSIAJirEeOyuJB9P_9Wlw Action #2 in Activity 'Invalid Entry'_#1:
+  switch
+    bool basis =
+      let precond_#1 =
+        let equalLhs_#1 =
+          switch
+            adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+              readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+            case adhocrecord(Uninitialized_#1) rawValue_#3 = basis
+              halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+            case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#3 = basis
+              readlocal rawValue_#3
+        in
+          let equalMatched_#1 =
+            blockdontcare
+              let instanceToMatch_#2 =
+                readlocal equalLhs_#1
+              and let matchField_qty_alt_1_#1 =
+                equal
+                  -1
+                  accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                    readlocal instanceToMatch_#2
+              and let matchField_qty_alt_2_#1 =
+                equal
+                  20
+                  accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                    readlocal instanceToMatch_#2
+              in
+                and
+                  equal
+                    equal
+                      true
+                      false
+                    false
+                  equal
+                    and
+                      equal
+                        readlocal matchField_qty_alt_1_#1
+                        false
+                      equal
+                        readlocal matchField_qty_alt_2_#1
+                        false
+                    false
+          and let dummy_#18 =
+            switch
+              bool basis =
+                readlocal equalMatched_#1
+              case adhocrecord(True_#1) cond_#3 = basis
+                makerecord adhocrecord(Void_#1)
+              case adhocrecord(False_#1) cond_#3 = basis
+                makerecord adhocrecord(Void_#1)
+          in
+            readlocal equalMatched_#1
+      and let dummy_#17 =
+        switch
+          bool basis =
+            readlocal precond_#1
+          case adhocrecord(True_#1) cond_#4 = basis
+            covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _kI4LkJPHEeO_KayZfGtJow.invocation _WpSIAJirEeOyuJB9P_9Wlw.decision true
+          case adhocrecord(False_#1) cond_#4 = basis
+            covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _kI4LkJPHEeO_KayZfGtJow.invocation _WpSIAJirEeOyuJB9P_9Wlw.decision false
+      in
+        readlocal precond_#1
+    case adhocrecord(True_#1) cond_#2 = basis
+      let dummy_#19 =
+        let result_#8 =
+          let summable_#10 =
+            emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup))
+              record CrimePersistentRecord(Outp_action qmlf70081db82ff4c97a0bedfeddb222955_Display_Popup):
+                field payload =
+                  record CrimePersistentRecord(Q_qmlf70081db82ff4c97a0bedfeddb222955):
+                    field text =
+                      <arg 0>
+                    field qml0ef2b7dc795c449e9723aaf1743376a7 =
+                      <arg 1>
+              with arg 0 =
+                "Invalid qty"
+              with arg 1 =
+                makeenum CrimeEnum(Q_WidgetStatus,4,Enum converter Widget Status) 0
+          in
+            makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+              readlocal summable_#10
+        in
+          covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._kI4LkJPHEeO_KayZfGtJow._WpSIAJirEeOyuJB9P_9Wlw
+      in
+        makesum adhocsum(adhocrecord(Loc_flow _wbQSMJSCEeO-4IJWEyiUmw Activity Node 'Invalid Entry' -> Merge Node 'Merge'_#1))
+          makerecord adhocrecord(Loc_flow _wbQSMJSCEeO-4IJWEyiUmw Activity Node 'Invalid Entry' -> Merge Node 'Merge'_#1)
+    case adhocrecord(False_#1) cond_#2 = basis
+      makesum adhocsum(adhocrecord(Loc_flow _wbQSMJSCEeO-4IJWEyiUmw Activity Node 'Invalid Entry' -> Merge Node 'Merge'_#1))
+        makerecord adhocrecord(Loc_flow _wbQSMJSCEeO-4IJWEyiUmw Activity Node 'Invalid Entry' -> Merge Node 'Merge'_#1)
+
+Loc_flow _wbQSMJSCEeO-4IJWEyiUmw Activity Node 'Invalid Entry' -> Merge Node 'Merge'_#1:
+  let dummy_#76 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._wbQSMJSCEeO-4IJWEyiUmw
+  in
+    makesum adhocsum(adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1)
+
+Loc_flow _E0qqADAbEeePv92F-pQAUw Decision Node 'Valid Entry?' -> Activity Node 'Add To Cart'_#1:
+  let dummy_#79 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._E0qqADAbEeePv92F-pQAUw
+  in
+    makesum adhocsum(adhocrecord(Loc_node __jBMgJPHEeO_KayZfGtJow Activity Node 'Add To Cart'_#1))
+      makerecord adhocrecord(Loc_node __jBMgJPHEeO_KayZfGtJow Activity Node 'Add To Cart'_#1)
+
+Loc_node __jBMgJPHEeO_KayZfGtJow Activity Node 'Add To Cart'_#1:
+  let dummy_#27 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow.__jBMgJPHEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _HLadEJPPEeO_KayZfGtJow Action #1 in Activity 'Add To Cart'_#1))
+      makerecord adhocrecord(Loc_invocation _HLadEJPPEeO_KayZfGtJow Action #1 in Activity 'Add To Cart'_#1)
+
+Loc_invocation _HLadEJPPEeO_KayZfGtJow Action #1 in Activity 'Add To Cart'_#1:
+  let dummy_#24 =
+    let result_#10 =
+      let summable_#12 =
+        writeglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1 =
+          flatmap source
+            let elem0_#1 =
+              readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+            and let elem1_#1 =
+              let elem0_#2 =
+                let entryToDataTable_#1 =
+                  let dataMappingSource_#1 =
+                    switch
+                      adhocsum(adhocrecord(Uninitialized_#1), persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5)) basis =
+                        readglobal qml877ca92107364c019f9a2bbad37aec3b_#1
+                      case adhocrecord(Uninitialized_#1) rawValue_#5 = basis
+                        halt DEFECT "'Entered Item' Variable cannot be used before it has been initialized"
+                      case persistentrecord(Q_qml9728b5aef5024b6da9cfddae7b3719e5) rawValue_#5 = basis
+                        readlocal rawValue_#5
+                  in
+                    let qmlcb13787b045a4f888ff43daae3612b3b_#1 =
+                      accessfield qml7d0387ac657b42ef90f76fcfdd630220
+                        readlocal dataMappingSource_#1
+                    and let qml7d5e4d30fa844605abd3c4b77f5727bb_#1 =
+                      accessfield qml9ecbfd96726844b7b8a655fdc17c913d
+                        readlocal dataMappingSource_#1
+                    in
+                      makerecord persistentrecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry)
+                        string qmlcb13787b045a4f888ff43daae3612b3b = 
+                          readlocal qmlcb13787b045a4f888ff43daae3612b3b_#1
+                        int qml7d5e4d30fa844605abd3c4b77f5727bb = 
+                          readlocal qml7d5e4d30fa844605abd3c4b77f5727bb_#1
+                and let dummy_#25 =
+                  blockdontcare
+                    accessfield qmlcb13787b045a4f888ff43daae3612b3b
+                      readlocal entryToDataTable_#1
+                and let dummy_#26 =
+                  blockdontcare
+                    accessfield qml7d5e4d30fa844605abd3c4b77f5727bb
+                      readlocal entryToDataTable_#1
+                in
+                  readlocal entryToDataTable_#1
+              in
+                makearray CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry))
+                  readlocal elem0_#2
+            in
+              makearray CrimeArray(CrimeArray(CrimePersistentRecord(Q_qmlbed44af6da6f475daeb83176639af5b5_Entry)))
+                readlocal elem0_#1
+                readlocal elem1_#1
+          flatmap function of element as element_#1
+            readlocal element_#1
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Invalid_Datatable_Entry_#1), adhocrecord(Void_#1))
+          readlocal summable_#12
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow.__jBMgJPHEeO_KayZfGtJow._HLadEJPPEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_flow _nocQoJPxEeO-4IJWEyiUmw Activity Node 'Add To Cart' -> Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_flow _nocQoJPxEeO-4IJWEyiUmw Activity Node 'Add To Cart' -> Merge Node 'Merge'_#1)
+
+Loc_flow _nocQoJPxEeO-4IJWEyiUmw Activity Node 'Add To Cart' -> Merge Node 'Merge'_#1:
+  let dummy_#75 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow._nocQoJPxEeO-4IJWEyiUmw
+  in
+    makesum adhocsum(adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1))
+      makerecord adhocrecord(Loc_node _kBMMAJPDEeO_KayZfGtJow Merge Node 'Merge'_#1)
+
+Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_#1:
+  let successor_#2 =
+    switch
+      adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196), adhocrecord(Not_yet_received_#1)) basis =
+        accessfield maybe received
+          readlocal Loc_flow __tawkJPFEeO_KayZfGtJow Event Node 'Choose Next Step' -> Activity Node 'Check Out'_locationData_#1
+      case persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) switched_#14 = basis
+        makesum adhocsum(adhocrecord(Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1))
+          makerecord adhocrecord(Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1)
+            persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) received = 
+              readlocal switched_#14
+      case adhocrecord(Not_yet_received_#1) switched_#14 = basis
+        let precond_Check Out_#2 =
+          let precond_#3 =
+            let equal_#1 =
+              blockdontcare
+                equal
+                  false
+                  lessthan
+                    length
+                      readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+                    1
+            in
+              readlocal equal_#1
+          and let dummy_#58 =
+            switch
+              bool basis =
+                readlocal precond_#3
+              case adhocrecord(True_#1) cond_#18 = basis
+                covercheckpoint precondition.!precondition.ad _frea4JPBEeO_KayZfGtJow _9b6oAJPFEeO_KayZfGtJow.invocation _Ea5zYJPGEeO_KayZfGtJow.decision true
+              case adhocrecord(False_#1) cond_#18 = basis
+                makerecord adhocrecord(Void_#1)
+          in
+            readlocal precond_#3
+        in
+          switch
+            bool basis =
+              equal
+                equal
+                  readlocal precond_Check Out_#2
+                  false
+                false
+            case adhocrecord(True_#1) cond_#35 = basis
+              switch
+                adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196)) basis =
+                  receive adhocsum(persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196))
+                case persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) switched_#15 = basis
+                  accessfield successor
+                    switch
+                      adhocsum(adhocrecord(Some_#3), adhocrecord(None_#1)) basis =
+                        let found_#5 =
+                          switch
+                            bool basis =
+                              switch
+                                bool basis =
+                                  readlocal precond_Check Out_#2
+                                case adhocrecord(True_#1) cond_#37 = basis
+                                  true
+                                case adhocrecord(False_#1) cond_#37 = basis
+                                  false
+                            case adhocrecord(True_#1) cond_#36 = basis
+                              switch
+                                adhocsum(adhocrecord(Some_#3), adhocrecord(None_#1)) basis =
+                                  makesum adhocsum(adhocrecord(Some_#3), adhocrecord(None_#1))
+                                    makerecord adhocrecord(None_#1)
+                                case adhocrecord(Some_#3) switched_#17 = basis
+                                  halt DEFECT "Non deterministic selection of next possible event"
+                                case adhocrecord(None_#1) switched_#17 = basis
+                                  makesum adhocsum(adhocrecord(Some_#3), adhocrecord(None_#1))
+                                    makerecord adhocrecord(Some_#3)
+                                      adhocsum(adhocrecord(Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1)) successor = 
+                                        makesum adhocsum(adhocrecord(Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1))
+                                          makerecord adhocrecord(Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1)
+                                            persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) received = 
+                                              readlocal switched_#15
+                            case adhocrecord(False_#1) cond_#36 = basis
+                              makesum adhocsum(adhocrecord(Some_#3), adhocrecord(None_#1))
+                                makerecord adhocrecord(None_#1)
+                        in
+                          readlocal found_#5
+                      case adhocrecord(Some_#3) switched_#16 = basis
+                        readlocal switched_#16
+                      case adhocrecord(None_#1) switched_#16 = basis
+                        halt BLOCKED "Action guard mismatch"
+            case adhocrecord(False_#1) cond_#35 = basis
+              halt DEFECT "Cannot make progress in the model because all the preconditions are false"
+  and let dummy_#70 =
+    covercheckpoint ad-control-flow._frea4JPBEeO_KayZfGtJow.__tawkJPFEeO_KayZfGtJow
+  in
+    readlocal successor_#2
+
+Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_#1:
+  let dummy_#10 =
+    covercheckpoint ad-node._frea4JPBEeO_KayZfGtJow._9b6oAJPFEeO_KayZfGtJow
+  in
+    let summable_#6 =
+      let received_#4 =
+        accessfield received
+          readlocal Loc_node _9b6oAJPFEeO_KayZfGtJow Activity Node 'Check Out'_locationData_#1
+      in
+        makerecord adhocrecord(Loc_invocation _Ea5zYJPGEeO_KayZfGtJow Action #1 in Activity 'Check Out'_#1)
+          persistentrecord(Inp_action qml602c51f2cc314627900b245c52678501_Click_Action_qml6e8134b8c9934d56a4de3a6509ccf196) received = 
+            readlocal received_#4
+    in
+      makesum adhocsum(adhocrecord(Loc_invocation _Ea5zYJPGEeO_KayZfGtJow Action #1 in Activity 'Check Out'_#1))
+        readlocal summable_#6
+
+Loc_invocation _Ea5zYJPGEeO_KayZfGtJow Action #1 in Activity 'Check Out'_#1:
+  let received_#3 =
+    blockdontcare
+      accessfield received
+        readlocal Loc_invocation _Ea5zYJPGEeO_KayZfGtJow Action #1 in Activity 'Check Out'_locationData_#1
+  and let dummy_#9 =
+    covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._9b6oAJPFEeO_KayZfGtJow._Ea5zYJPGEeO_KayZfGtJow
+  in
+    makesum adhocsum(adhocrecord(Loc_invocation _xMZhYJeaEeO2kMTUvLWaPg Action #2 in Activity 'Check Out'_#1))
+      makerecord adhocrecord(Loc_invocation _xMZhYJeaEeO2kMTUvLWaPg Action #2 in Activity 'Check Out'_#1)
+
+Loc_invocation _xMZhYJeaEeO2kMTUvLWaPg Action #2 in Activity 'Check Out'_#1:
+  let dummy_#8 =
+    let result_#4 =
+      let summable_#5 =
+        emit CrimeEmit.VerificationProvider(CrimePersistentRecord(Outp_action qml2807bd4869f84a98a6096d7517b799dc_Display_Screen))
+          record CrimePersistentRecord(Outp_action qml2807bd4869f84a98a6096d7517b799dc_Display_Screen):
+            field payload =
+              record CrimePersistentRecord(Q_qml2807bd4869f84a98a6096d7517b799dc):
+                field qml1ddab3f2fbb24efd8fc462af13fe0e9c_Instance =
+                  <arg 0>
+          with arg 0 =
+            readglobal DataTable<qmlbed44af6da6f475daeb83176639af5b5_Entry>_#1
+      in
+        makesum adhocsum(adhocrecord(Uninitialized_#1), adhocrecord(Void_#1))
+          readlocal summable_#5
+    in
+      covercheckpoint ad-action-invoc._frea4JPBEeO_KayZfGtJow._9b6oAJPFEeO_KayZfGtJow._xMZhYJeaEeO2kMTUvLWaPg
+  in
+    makesum adhocsum(adhocrecord(Loc_Terminal_#1))
+      makerecord adhocrecord(Loc_Terminal_#1)
+
