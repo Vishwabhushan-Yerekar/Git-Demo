@@ -102,7 +102,7 @@
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_9vjHkQXaEeqbtvkh08o9xA"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_9vjuoAXaEeqbtvkh08o9xA" fontName="Segoe UI"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vjuoQXaEeqbtvkh08o9xA" x="369" y="434"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vjuoQXaEeqbtvkh08o9xA" x="370" y="395"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_LsqQwAXdEeqbtvkh08o9xA" type="2006" element="_LsmmYAXdEeqbtvkh08o9xA">
       <children xmi:type="notation:DecorationNode" xmi:id="_LsqQxAXdEeqbtvkh08o9xA" type="5006"/>
